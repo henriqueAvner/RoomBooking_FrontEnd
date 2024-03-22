@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    /* Garantindo que o contêiner ocupe toda a largura disponível */
+}
+
+.list li {
+    width: calc(33.33% - 20px);
+    /* Definindo a largura de cada li */
+    margin-right: 20px;
+    /* Espaçamento entre os itens */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo dos itens */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* Garantindo que a borda seja contabilizada no cálculo do tamanho */
+}
