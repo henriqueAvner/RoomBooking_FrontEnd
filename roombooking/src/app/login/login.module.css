@@ -1,0 +1,62 @@
+.main {
+    position: relative;
+    color: white;
+    background-image: url('/images/pattern.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.tittle {
+    text-align: center;
+}
+
+.form {
+    position: absolute;
+    align-items: center;
+    border: solid 5px white;
+
+}
+
+/* 
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(192, 184, 184, 0.5);
+    
+} */
+
+.buttonsContainer {
+    position: absolute;
+    display: flex;
+    margin-top: 200px;
+    margin-left: 810px;
+    gap: 20px;
+
+}
+
+.button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+
+.hotel {
+    margin-left: 180px;
+}
