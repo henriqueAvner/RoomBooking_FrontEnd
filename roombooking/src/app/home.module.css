@@ -1,62 +1,70 @@
+/* styles.module.css */
+
 .main {
     position: relative;
     color: white;
     background-image: url('/images/pattern.png');
     background-size: cover;
     background-position: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-.tittle {
+.title {
     text-align: center;
 }
 
-.form {
+.buttonContainer {
     position: absolute;
-    align-items: center;
-    border: solid 5px white;
-
-}
-
-/* 
-.main::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(192, 184, 184, 0.5);
-    
-} */
-
-.buttonsContainer {
-    position: absolute;
+    margin-top: 20px;
     display: flex;
-    margin-top: 200px;
-    margin-left: 810px;
-    gap: 20px;
-
+    justify-content: center;
 }
 
-.button {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
+
+
+.buttonLogin {
+    background-color: #a87f4e;
+    color: rgb(245, 245, 245);
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all .2s;
+    position: relative;
 }
 
-.button:hover {
-    background-color: #f0f0f0;
-    color: black;
+.buttonLogin:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    background: linear-gradient(to right, rgb(119, 165, 70), rgb(65, 183, 138));
+    background-position: 0% center;
+    background-size: 200%;
 }
 
+.buttonRegister {
+    background-color: #a87f4e;
+    color: rgb(245, 245, 245);
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+}
 
-.hotel {
-    margin-left: 180px;
+.buttonRegister:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    background: linear-gradient(to right, rgb(119, 165, 70), rgb(65, 183, 138));
+    background-position: 0% center;
+    background-size: 200%;
+
 }

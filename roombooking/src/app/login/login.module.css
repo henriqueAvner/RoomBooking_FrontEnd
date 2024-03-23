@@ -1,62 +1,79 @@
+/* styles.module.css */
+
 .main {
     position: relative;
     color: white;
     background-image: url('/images/pattern.png');
     background-size: cover;
     background-position: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-.tittle {
+.title {
     text-align: center;
 }
 
 .form {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     border: solid 5px white;
-
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Adicionando um fundo transparente */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    /* Adicionando efeito de desfoque */
 }
 
-/* 
-.main::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(192, 184, 184, 0.5);
-    
-} */
+.inputContainer {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
 .buttonsContainer {
-    position: absolute;
+    margin-top: 20px;
     display: flex;
-    margin-top: 200px;
-    margin-left: 810px;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
 
 }
 
 .button {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
+    background-color: #a87f4e;
+    color: rgb(245, 245, 245);
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all .2s;
+    position: relative;
 }
 
 .button:hover {
-    background-color: #f0f0f0;
-    color: black;
+    transform: scaleX(1.1) scaleY(1.1);
+    background: linear-gradient(to left, rgb(49, 156, 185), rgb(238, 77, 8));
+    background-position: 10% center;
+    background-size: 200%;
+    ;
 }
 
-
 .hotel {
-    margin-left: 180px;
+    margin-top: 20px;
+    /* Movido o margin-top para centralizar o hotel verticalmente */
 }
