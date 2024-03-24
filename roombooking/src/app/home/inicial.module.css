@@ -2,7 +2,6 @@
 
 .main {
     position: relative;
-    color: white;
     background-image: url('/images/pattern.png');
     background-size: cover;
     background-position: center;
@@ -13,18 +12,21 @@
     min-height: 100vh;
 }
 
+
 .title {
     font-family: 'Arial', sans-serif;
     font-size: 2.5rem;
-    color: #d2cdb4;
+    color: #e1dab8;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: solid 5px rgb(255, 252, 252);
+    margin-top: 0;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
-    background-color: white;
-    text-decoration: underline white;
+    background-color: rgb(148, 146, 69);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 110px;
 
 }
 
@@ -36,44 +38,26 @@
     text-decoration: underline rgb(226, 199, 23);
 }
 
-
-.form {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 5px white;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.inputContainer {
-    margin-bottom: 20px;
-    display: column;
-    gap: 10px;
-    flex-wrap: wrap;
+.links li {
+    margin-bottom: 10px;
 }
 
-.input {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+.links a {
+    text-decoration: none;
+    color: white;
 }
 
-.buttonsContainer {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
+.links a:hover {
+    color: rgb(226, 199, 23);
 }
 
-.button {
+.logoutButton {
     background-color: #a87f4e;
     color: rgb(245, 245, 245);
     padding: 15px 40px;
@@ -84,18 +68,11 @@
     border-radius: 100px;
     cursor: pointer;
     transition: all .2s;
-    position: relative;
 }
 
-.button:hover {
+.logoutButton:hover {
     transform: scaleX(1.1) scaleY(1.1);
     background: linear-gradient(to left, rgb(49, 156, 185), rgb(238, 77, 8));
     background-position: 10% center;
     background-size: 200%;
-    ;
-}
-
-.hotel {
-    margin-top: 20px;
-    /* Movido o margin-top para centralizar o hotel verticalmente */
 }

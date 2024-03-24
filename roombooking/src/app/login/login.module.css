@@ -14,7 +14,26 @@
 }
 
 .title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #d2cdb4;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: solid 5px rgb(255, 252, 252);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: underline white;
+
+}
+
+.title:hover {
+    color: rgb(181, 167, 46);
+    font-style: italic;
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: all .2s;
+    text-decoration: underline rgb(226, 199, 23);
 }
 
 .form {
@@ -25,14 +44,16 @@
     border: solid 5px white;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
-    /* Adicionando um fundo transparente */
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    /* Adicionando efeito de desfoque */
+
 }
 
 .inputContainer {
     margin-bottom: 20px;
+    display: column;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .input {
